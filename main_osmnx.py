@@ -49,6 +49,7 @@ for i in range(0, np.size(villes)):
     graphs.append(ox.graph_from_place(villes[i], network_type = 'drive'))
 
     # Retreiving nodes and edges from a town
+    n, e = ox.graph_to_gdfs(graphs[i])
     name = f"{villes[i].split(',')[0]}.json"
     generate_json.json_generator(e, name) # in comment if json are already created
 
