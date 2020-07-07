@@ -31,3 +31,20 @@ On the left, we can see that roads are represented with different color :
   * orange : secondary road
   * yellow : tertiary road
   * grey : other
+
+### cluster_IRIS
+
+The second step consist in downloading iris data from a city and project the iris cluster associated with OSMnx.
+As the result, users can obtain different json files:
+  * cluster : file containing all street and their cluster.
+  * point : file containing all point in each cluster.
+  * matrix : file containing matrix for each cluster.
+
+Matrices are obtain with here api (herepy) and represent the time travel from one point to an other with a car.
+This api allows to have time matrices for a car, bicycle or truck.
+
+Users will obtain the associated graphs from this city updated with Iris clustering :
+
+![](data/figures/Bordeaux_Iris.png)
+
+Iris cluster are downloaded from the following [link](https://public.opendatasoft.com/explore/dataset/contours-iris/export/?flg=fr&q=&refine.nom_com=Bordeaux&dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJjb2x1bW4iLCJmdW5jIjoiQ09VTlQiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiIjRkY1MTVBIn1dLCJ4QXhpcyI6Im5vbV9jb20iLCJtYXhwb2ludHMiOjUwLCJzb3J0IjoiIiwiY29uZmlnIjp7ImRhdGFzZXQiOiJjb250b3Vycy1pcmlzIiwib3B0aW9ucyI6eyJmbGciOiJmciIsInEiOiIiLCJyZWZpbmUubm9tX2NvbSI6IkJvcmRlYXV4In19fV0sInRpbWVzY2FsZSI6IiIsImRpc3BsYXlMZWdlbmQiOnRydWUsImFsaWduTW9udGgiOnRydWV9).
