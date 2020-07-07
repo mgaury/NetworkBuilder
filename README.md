@@ -43,6 +43,8 @@ As the result, users can obtain different json files:
 Matrices are obtain with here api (herepy) and represent the time travel from one point to an other with a car.
 This api allows to have time matrices for a car, bicycle or truck.
 
+In order to be able to use the here api, users must have an api key.
+
 Users will obtain the associated graphs from this city updated with Iris clustering :
 
 ![](data/figures/Bordeaux_Iris.png)
