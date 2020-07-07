@@ -1,10 +1,5 @@
 import osmnx as ox
 import matplotlib.pyplot as plt
-from pyproj import CRS
-import geopandas as gpd
-import networkx as nx
-from shapely.geometry import Point, LineString
-import pandas as pd
 import numpy as np
 import math
 import json
@@ -80,7 +75,7 @@ def update_json(ville_name, ville_street):
 
     T = spatial.KDTree(UV)
 
-    file = open("paris-command-2.csv", "r", encoding='latin-1') # ouvrir le fichier
+    file = open("file-command.csv", "r", encoding='latin-1') # ouvrir le fichier
     reader = csv.reader(file, delimiter = ";")
 
     lat = []

@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import math
 import json
-from scipy import spatial
 
 import osm_data
 import generate_json
@@ -11,25 +10,7 @@ import generate_json
 cs = '[out:json][timeout:600]'
 
 villes = [
-    'Paris, France',
-    'Créteil, France',
-    'Aubervilliers, France',
-    'Vitry-sur-Seine, France',
-    'Ivry-sur-Seine, France',
-    'Bagneux, 92220, France',
-    'Montrouge, France',
-    'Malakoff, France',
-    'Charenton-le-Pont, France',
-    'Maisons-Alfort, France',
-    'Gentilly, France',
-    'Arcueil, France',
-    'Pantin, France',
-    'Nanterre, France',
-    'Puteaux, France',
-    'Courbevoie, France',
-    'Neuilly-sur-Seine,France',
-    'Alfortville, France',
-    'Bobigny, France'
+    'Bordeaux, France'
 ]
 
 graphs = []
@@ -77,6 +58,6 @@ for i in range(0, np.size(villes)):
     edges[i].plot(ax = ax2, linewidth = 1, edgecolor = 'grey')
     nodes[i].plot(ax = ax2, linewidth = 1, edgecolor = 'black')
 
-generate_json.update_json(f"{villes[0].split(',')[0]}.json", graphs[0])
+#generate_json.update_json(f"{villes[0].split(',')[0]}.json", graphs[0])
 
 plt.show()
