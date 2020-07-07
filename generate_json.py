@@ -60,7 +60,7 @@ def json_generator(edges, name):
             dict.append(rue)
 
     j = json.dumps(dict, indent=4, sort_keys=True, ensure_ascii=False)
-    f = open(name, "w")
+    f = open(f"data/json/{name}", "w")
     f.write(j)
     f.close()
 
@@ -99,6 +99,6 @@ def update_json(ville_name, ville_street):
             data[idx[0]]['postal_code'] = f"{real2[i][-1]}"
 
     j = json.dumps(data, indent=4, sort_keys=True, ensure_ascii=False)
-    f = open("final_json.json","w")
+    f = open(f"data/json/{name}", "w")
     f.write(j)
     f.close()
