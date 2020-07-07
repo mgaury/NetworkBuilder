@@ -11,7 +11,7 @@ This package is using different project in order to download spatial geometries,
   * [Matplotlib](https://github.com/matplotlib/matplotlib): Comprehensive library for creating static, animated, and interactive visualizations in Python.
 
 
-## How to use OSMnx
+## How to use Network Builder
 
 ### main_osmnx
 
