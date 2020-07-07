@@ -28,7 +28,7 @@ colour_code = [
 ville_street = ox.graph_from_place(ville, timeout = 1500, network_type = 'drive')
 nodes, edges = ox.graph_to_gdfs(ville_street)
 
-file2 = open('contours-iris_Bordeaux.json', "r", encoding='utf-8')
+file2 = open("data/json/contours-iris_Bordeaux.json", "r", encoding='utf-8')
 data = json.load(file2)
 
 fig, ax = plt.subplots()
@@ -125,7 +125,7 @@ for dat in data:
                     c = copy.copy(response)
                     f.write(str(c))
                     f.close()
-                    file = open("data/json/temp.json"', "r", encoding='utf-8')
+                    file = open("data/json/temp.json", "r", encoding='utf-8')
                     data = json.load(file)
                     for rep in data['response']['matrixEntry']:
                         matrix.append(rep['summary']['travelTime'])
