@@ -22,6 +22,8 @@ The file containing all command must be, at least, like this : ID, lon, lat, ...
 Then, we use the following function [get_nearest_edges()](https://osmnx.readthedocs.io/en/stable/osmnx.html) to project commands on streets.
 The scipy package is used in order to create a KD-Tree. this allows to update the json rapidly, even if users is dealing with billions of commands.
 
+![](data/figures/Benchmark_KD-Tree.png)
+
 Users can also obtain a visualized graph from the city chose :
 
 ![](data/figures/Bordeaux.png)
